@@ -1,0 +1,5 @@
+-in:file:fasta ./seq.txt
+#-in:file:native ./pdb.pdb
+-mp::assembly::poses ..
+#-mp::assembly::TM_pose_number 2
+-relax::range::angle_max 0.1
