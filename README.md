@@ -9,7 +9,7 @@ College of Information Engineering
 Zhejiang University of Technology, Hangzhou 310023, China  
 ✉️ Email: [zgj@zjut.edu.cn](mailto:zgj@zjut.edu.cn)
 
-## **Overall workflow for the DeepAAAssembly**
+## ⭐**Overall workflow for the DeepAAAssembly**⭐
 ![DeepAAAssembly pipeline](pipeline.png)
 
 ## 1.🛠**Download DeepAAAssembly package**
