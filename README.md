@@ -65,7 +65,7 @@ $ git clone git@github.com:jeffreyruffolo/AntiBERTy.git
 $ pip install AntiBERTy
 ```
 
-## 3.📂**Data Preparation**
+## 3.📦**Data Preparation**
 ### **Download Data**
 
 - The antibody–antigen complex structure database used by DeepAAAssembly can be accessed from [**SAbDab**](https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/sabdab)
@@ -88,14 +88,14 @@ bash ./distance/data/utils/process_pdb.sh
 ```bash
 bash ./distance/data/features/generate_npz_file.sh ./distance/data/dataset
 ```
-## 4.🚀**Generate inter-chain distance maps**
-### **Run Distance Prediction**
+## 4.🚀**Predicte inter-chain distance maps**
+
 - Run the following script; it will output the predicted distances to the **`./distance/predict/output`** directory.
 
 ```bash
 bash ./distance/predict/run_predict.sh
 ```
-## 5.🚀**Conformation Sampling**
+## 5.🧩**Conformation Sampling**
 After installing Rosetta,
 
 - copy **`complex_assembly.cc`** and **`pareto.hh`** from **`./simulation/rosetta_src_2021.16.61629_bundle/`** to **`./simulation/rosetta_src_2021.16.61629_bundle/main/source/src/apps/public/complex_assembly`**.
@@ -111,7 +111,7 @@ bash ./simulation/rosetta_src_2021.16.61629_bundle/main/source/compile.sh
 ```bash
 bash ./simulation/run_rosetta/DB5.5/stage_1/run_stage_1.sh
 ```
-- If you wanna to see the complex structure out of stage_1 ,run the following script
+- If you wanna to see the complex structure out of **stage_1** ,run the following script
 ```
 bash ./simulation/run_rosetta/utils/process.sh
 ```
