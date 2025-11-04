@@ -109,15 +109,14 @@ bash ./simulation/rosetta_src_2021.16.61629_bundle/main/source/compile.sh
 ### **The Global-exploration stage**
 - Run the following script to perform Global-exploration sampling.
 ```bash
-bash ./run_exploration.sh
+bash ./simulation/run_rosetta/DB5.5/stage_1/run_stage_1.sh
+```
+- If you wanna to see the complex structure out of stage_1 ,run the following script
+```
+bash ./simulation/run_rosetta/utils/process.sh
 ```
 ### **The Loacal-exploiation stage**
 - Run the following script to perform Loacal-exploiation sampling.
 ```bash
-bash ./run_exploiation.sh
-```
-### **Output**
-- Run the following script to generate the final output conformations.`
-```bash
-bash ./simulation/run_rosetta/utils/process.sh
+bash ./simulation/run_rosetta/DB5.5/stage_2/run_stage_2.sh
 ```
