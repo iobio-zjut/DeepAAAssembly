@@ -24,14 +24,14 @@ git clone --recursive https://github.com/iobio-zjut/DeepAAAssembly
 ## 2.📥**Installation**
 
 ### **Third-Party Software Used**
-- **AlphaFold3** ([GitHub](https://github.com/google-deepmind/alphafold3)) 
-- **AntiBERTy** ([GitHub](https://github.com/jeffreyruffolo/AntiBERTy))
-- **Voronota** ([GitHub](https://github.com/kliment-olechnovic/voronota?tab=MIT-1-ov-file))
-- **PeSTo** ([GitHub](https://github.com/LBM-EPFL/PeSTo))
-- **Rosetta**([Version-2021.16](https://downloads.rosettacommons.org/downloads/academic/))
-- **ESM-MSA-1b** ([Download](https://dl.fbaipublicfiles.com/fair-esm/models/esm_msa1b_t12_100M_UR50S.pt))
+- **AlphaFold3** ([GitHub](https://github.com/google-deepmind/alphafold3)) | [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
+- **AntiBERTy** ([GitHub](https://github.com/jeffreyruffolo/AntiBERTy)) | [MIT](https://opensource.org/license/mit)
+- **Voronota** ([GitHub](https://github.com/kliment-olechnovic/voronota?tab=MIT-1-ov-file)) | [MIT](https://opensource.org/license/mit)
+- **PeSTo** ([GitHub](https://github.com/LBM-EPFL/PeSTo)) | [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
+- **Rosetta**([Version-2021.16](https://downloads.rosettacommons.org/downloads/academic/))  | [Academic License (non-commercial use only)](https://github.com/RosettaCommons/rosetta/blob/main/LICENSE.md)
+- **ESM-MSA-1b** ([Download](https://dl.fbaipublicfiles.com/fair-esm/models/esm_msa1b_t12_100M_UR50S.pt)) | [MIT](https://opensource.org/license/mit)
 - Add the download file `esm_msa1_t12_100M_UR50S.pt` to `/DeepAAAssembly_main/distance/data/feature/bin/esm_pretrain_models`.
-- **UniRef30** ([Database](https://uniclust.mmseqs.com/))
+- **UniRef30** ([Database](https://uniclust.mmseqs.com/)) | [AGPL-3.0 license](https://www.gnu.org/licenses/agpl-3.0.en.html)
 - Add the download file path `UniRef30_2021_03` to `/DeepAAAssembly_main/distance/data/uniref30_former/UniRef30_2021_03`.
 
 (The above paths can be modified in `/DeepAAAssembly_main/distance/data/feature/set_env.sh`)
