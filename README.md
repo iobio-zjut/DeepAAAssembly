@@ -28,7 +28,7 @@ git clone --recursive https://github.com/iobio-zjut/DeepAAAssembly
 - **AntiBERTy** ([GitHub](https://github.com/jeffreyruffolo/AntiBERTy)) | [MIT](https://opensource.org/license/mit)
 - **Voronota** ([GitHub](https://github.com/kliment-olechnovic/voronota?tab=MIT-1-ov-file)) | [MIT](https://opensource.org/license/mit)
 - **PeSTo** ([GitHub](https://github.com/LBM-EPFL/PeSTo)) | [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
-- **Rosetta**([Version-2021.16](https://downloads.rosettacommons.org/downloads/academic/))  | [Academic License (non-commercial use only)](https://github.com/RosettaCommons/rosetta/blob/main/LICENSE.md)
+- **Rosetta** ([Version-2021.16](https://downloads.rosettacommons.org/downloads/academic/))  | [Academic License (non-commercial use only)](https://github.com/RosettaCommons/rosetta/blob/main/LICENSE.md)
 - **ESM-MSA-1b** ([Download](https://dl.fbaipublicfiles.com/fair-esm/models/esm_msa1b_t12_100M_UR50S.pt)) | [MIT](https://opensource.org/license/mit)
 - Add the download file `esm_msa1_t12_100M_UR50S.pt` to `/DeepAAAssembly_main/distance/data/feature/bin/esm_pretrain_models`.
 - **UniRef30** ([Database](https://uniclust.mmseqs.com/)) | [AGPL-3.0 license](https://www.gnu.org/licenses/agpl-3.0.en.html)
@@ -68,7 +68,7 @@ $ pip install AntiBERTy
 ## 3.📦**Data Preparation**
 ### **Download Data**
 
-- The antibody–antigen complex structure database used by DeepAAAssembly can be accessed from [**SAbDab**](https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/sabdab)
+- The antibody-antigen complex structure database used by DeepAAAssembly can be accessed from [**SAbDab**](https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/sabdab)
 
 You can choose structures with **IMGT** numbering for download and obtain the corresponding annotation file **`summary.tsv`**.
 
@@ -88,7 +88,7 @@ bash ./distance/data/utils/process_pdb.sh
 ```bash
 bash ./distance/data/features/generate_npz_file.sh ./distance/data/dataset
 ```
-## 4.🚀**Predicte inter-chain distance maps**
+## 4.🚀**Predicted inter-chain distance maps**
 
 - Run the following script; it will output the predicted distances to the **`./distance/predict/output`** directory.
 
@@ -111,12 +111,12 @@ bash ./simulation/rosetta_src_2021.16.61629_bundle/main/source/compile.sh
 ```bash
 bash ./simulation/run_rosetta/DB5.5/stage_1/run_stage_1.sh
 ```
-- If you wanna to see the complex structure out of **stage_1** ,run the following script
+- If you wanna to see the complex structure out of **stage_1** , run the following script
 ```
 bash ./simulation/run_rosetta/utils/process.sh
 ```
-### **The Loacal-exploiation stage**
-- Run the following script to perform Loacal-exploiation sampling.
+### **The Local-exploitation stage**
+- Run the following script to perform Local-exploitation sampling.
 ```bash
 bash ./simulation/run_rosetta/DB5.5/stage_2/run_stage_2.sh
 ```
