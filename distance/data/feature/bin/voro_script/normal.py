@@ -93,7 +93,8 @@ def process_folder(folder_path):
                 npz_file = os.path.join(output_folder_path, f"{os.path.splitext(file_name)[0]}_voro_normal.npz")
 
                 print("file_name",file_name)
-
+                extract_normal(input_file, npz_file)
+            
 if __name__ == "__main__":
     if len(sys.argv) != 4:
         print("Usage: python 2.normal.py subfolder_file root_folder")
