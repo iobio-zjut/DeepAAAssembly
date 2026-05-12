@@ -64,8 +64,17 @@ gemmi==0.6.3
 $ git clone git@github.com:jeffreyruffolo/AntiBERTy.git 
 $ pip install AntiBERTy
 ```
+## 3.💻**Recommended Hardware Requirements**
 
-## 3.📦**Data Preparation**
+For reproducibility and practical usability, all experiments in this work were conducted on a single NVIDIA A100 GPU with up to 80 GB GPU memory and 20 CPU cores per task.
+
+The recommended hardware configuration for running DeepAAAssembly is:
+
+- GPU: NVIDIA A100 (80 GB memory recommended)
+- CPU: ≥20 CPU cores
+- Operating system: Linux
+
+## 4.📦**Data Preparation**
 ### **Download Data**
 
 - The antibody-antigen complex structure database used by DeepAAAssembly can be accessed from [**SAbDab**](https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/sabdab)
@@ -88,14 +97,14 @@ bash ./distance/data/utils/process_pdb.sh
 ```bash
 bash ./distance/data/features/generate_npz_file.sh ./distance/data/dataset
 ```
-## 4.🚀**Predicted inter-chain distance maps**
+## 5.🚀**Predicted inter-chain distance maps**
 
 - Run the following script; it will output the predicted distances to the **`./distance/predict/output`** directory.
 
 ```bash
 bash ./distance/predict/run_predict.sh
 ```
-## 5.🧩**Conformation Sampling**
+## 6.🧩**Conformation Sampling**
 After installing Rosetta,
 
 - copy **`complex_assembly.cc`** and **`pareto.hh`** from **`./simulation/rosetta_src_2021.16.61629_bundle/`** to **`./simulation/rosetta_src_2021.16.61629_bundle/main/source/src/apps/public/complex_assembly`**.
